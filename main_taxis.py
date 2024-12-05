@@ -14,7 +14,7 @@ import seaborn as sns
 
 # 2. App erstellen
 app = Dash(__name__, title="Taxis Dashboard")
-
+server = app.server
 # 3. Daten vorbereiten
 df = sns.load_dataset("taxis")
 df['pickup']=pd.to_datetime(df['pickup'])
